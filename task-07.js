@@ -13,10 +13,9 @@ const isLoginUnique = function(allLogins, login) {
     for (let i = 0; i < allLogins.length; i++) {
         if (login === allLogins[i]) {
             return false;
-        } else {
-            return true;
         }
     }
+    return true;
 };
 
 const addLogin = function(allLogins, login) {
